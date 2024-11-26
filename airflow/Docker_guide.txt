@@ -1,0 +1,17 @@
+-에어플로우 2.7.3 버전
+-포스트그레 연결
+-추가 라이브러리 설치(슬랙, requests, 판다스 등)
+
+-에어플로우 2.7.3 버전이 파이썬 3.8.18 기반이어서 개발 가상환경도 파이썬 버전 맞춰주세요.
+
+에어플로우 설치순서:
+
+1. cd로 airflow 폴더 진입
+2. airflow 폴더 밑에 logs, ps_db 폴더 생성
+3. docker-compose up airflow-init
+4. 3번 완료 후 docker-compose up -d
+
+에어플로우 접속:
+1. 로컬호스트 8080으로 접속
+2. id: airflow pw: airflow
+
