@@ -1,9 +1,6 @@
 logs/
 ps_db/
 
-#개인적인 대그 및 모듈 작업은 하기 폴더 이름으로 만들어서 push되지 않게 해주세요.
-dags_personal/
-plugins_pesonal/
 
 
 
