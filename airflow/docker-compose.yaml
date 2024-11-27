@@ -92,8 +92,11 @@ services:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
+    ports:
+      - "5432:5432"
     volumes:
       - ./ps_db:/var/lib/postgresql/data
+      - ../ml_flow/init.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "airflow"]
       interval: 10s
@@ -210,5 +213,28 @@ services:
     user: "0:0"
     volumes:
       - ${AIRFLOW_PROJ_DIR:-.}:/sources
+
+  mlflow:
+    build:
+      context: ../ml_flow/
+      dockerfile: Dockerfile
+    image: mlflow:custom
+    container_name: mlflow
+    depends_on:
+      - postgres
+    environment:
+      MLFLOW_BACKEND_STORE_URI: postgresql://airflow:airflow@postgres:5432/mlflow_db
+      MLFLOW_DEFAULT_ARTIFACT_ROOT: /mlflow/artifacts
+    ports:
+      - "5000:5000"
+    volumes:
+      - ../ml_flow/mlflow_artifacts:/mlflow/artifacts
+    command: >
+      mlflow server
+        --backend-store-uri postgresql://airflow:airflow@postgres:5432/mlflow_db
+        --default-artifact-root /mlflow/artifacts
+        --host 0.0.0.0
+        --port 5000
+
 
  

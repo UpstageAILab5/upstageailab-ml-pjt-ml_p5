@@ -17,4 +17,9 @@ RUN pip install --no-cache-dir \
     pandas \
     scikit-learn \
     requests \
-    numpy
+    numpy \
+    mlflow \
+    fastapi[all] \
+    uvicorn \
+    apache-airflow-providers-openlineage>=1.8.0
+RUN pip uninstall -y apache-airflow-providers-openlineage
