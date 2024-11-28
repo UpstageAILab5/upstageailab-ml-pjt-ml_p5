@@ -1,0 +1,14 @@
+pandas
+numpy
+scipy
+scikit-learn
+spotipy
+joblib
+fastapi[standard]
+uvicorn
+pydantic
+python-dotenv
+apache-airflow==2.7.3
+mlflow
+streamlit
+email-validator==2.0.0
