@@ -5,11 +5,10 @@
 ## **팀 구성**  
 | 팀원 | 역할 |  
 |------|------|  
-| 박패캠 | 팀장 |  
-| 이패캠 | 데이터 분석 |  
-| 최패캠 | 특성 엔지니어링 |  
-| 김패캠 | 모델 개발 |  
-| 오패캠 | 평가 및 검증 |  
+| 조성지 | 팀장, mlflow 환경설정, 데이터 크롤링, 프론트엔드제작 |  
+| 안서인 | 모델링 및 평가지표제작 |  
+| 김태환 | 모델링 및 서빙 |  
+| 조혜인 | 모델링 |  
 
 ---
 
@@ -19,9 +18,9 @@ Spotify 오디오 특성 데이터를 기반으로 사용자 맞춤형 음악을
 ### **개발 환경**  
 - **언어 및 도구:**  
   - Python 3.9  
-  - Jupyter Notebook / VSCode / Google Colab  
+  - Jupyter Notebook / VSCode 
 - **라이브러리:**  
-  - NumPy, pandas, scikit-learn, TensorFlow, PyTorch, Spotipy  
+  - NumPy, pandas, scikit-learn, TensorFlow, Spotipy, mlflow, streamlit, fastapi, apache-airflow 
 
 ### **요구 사항**  
 - Spotify API 액세스 키  
@@ -31,8 +30,8 @@ Spotify 오디오 특성 데이터를 기반으로 사용자 맞춤형 음악을
 ---
 
 ## **타임라인**  
-- **시작일:** 2024년 1월 10일  
-- **최종 제출 마감일:** 2024년 2월 10일  
+- **시작일:** 2024년 11월 25일  
+- **최종 제출 마감일:** 2024년 12월 7일  
 
 ---
 
@@ -50,6 +49,8 @@ Spotify 오디오 특성 데이터를 기반으로 사용자 맞춤형 음악을
     └── data  
         ├── eval  
         └── train  
+
+---
 
 ## 3. Data descrption
 
