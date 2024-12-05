@@ -1,50 +1,55 @@
-# Title (Please modify the title)
-## Team
+# Spotify 음악 추천 시스템
 
-| ![박패캠](https://avatars.githubusercontent.com/u/156163982?v=4) | ![이패캠](https://avatars.githubusercontent.com/u/156163982?v=4) | ![최패캠](https://avatars.githubusercontent.com/u/156163982?v=4) | ![김패캠](https://avatars.githubusercontent.com/u/156163982?v=4) | ![오패캠](https://avatars.githubusercontent.com/u/156163982?v=4) |
-| :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
-|            [박패캠](https://github.com/UpstageAILab)             |            [이패캠](https://github.com/UpstageAILab)             |            [최패캠](https://github.com/UpstageAILab)             |            [김패캠](https://github.com/UpstageAILab)             |            [오패캠](https://github.com/UpstageAILab)             |
-|                            팀장, 담당 역할                             |                            담당 역할                             |                            담당 역할                             |                            담당 역할                             |                            담당 역할                             |
+---
 
-## 0. Overview
-### Environment
-- _Write Development environment_
+## **팀 구성**  
+| 팀원 | 역할 |  
+|------|------|  
+| 박패캠 | 팀장 |  
+| 이패캠 | 데이터 분석 |  
+| 최패캠 | 특성 엔지니어링 |  
+| 김패캠 | 모델 개발 |  
+| 오패캠 | 평가 및 검증 |  
 
-### Requirements
-- _Write Requirements_
+---
 
-## 1. Competiton Info
+## **프로젝트 개요**  
+Spotify 오디오 특성 데이터를 기반으로 사용자 맞춤형 음악을 추천하는 콘텐츠 기반 추천 시스템을 개발합니다.
 
-### Overview
+### **개발 환경**  
+- **언어 및 도구:**  
+  - Python 3.9  
+  - Jupyter Notebook / VSCode / Google Colab  
+- **라이브러리:**  
+  - NumPy, pandas, scikit-learn, TensorFlow, PyTorch, Spotipy  
 
-- _Write competition information_
+### **요구 사항**  
+- Spotify API 액세스 키  
+- Python 필수 라이브러리 설치  
+- Spotify 오디오 특성 데이터셋  
 
-### Timeline
+---
 
-- ex) January 10, 2024 - Start Date
-- ex) February 10, 2024 - Final submission deadline
+## **타임라인**  
+- **시작일:** 2024년 1월 10일  
+- **최종 제출 마감일:** 2024년 2월 10일  
 
-## 2. Components
+---
 
-### Directory
-
-- _Insert your directory structure_
-
-e.g.
-```
-├── code
-│   ├── jupyter_notebooks
-│   │   └── model_train.ipynb
-│   └── train.py
-├── docs
-│   ├── pdf
-│   │   └── (Template) [패스트캠퍼스] Upstage AI Lab 1기_그룹 스터디 .pptx
-│   └── paper
-└── input
-    └── data
-        ├── eval
-        └── train
-```
+## **프로젝트 디렉토리 구조**  
+```plaintext
+├── code  
+│   ├── jupyter_notebooks  
+│   │   └── model_train.ipynb  
+│   └── train.py  
+├── docs  
+│   ├── pdf  
+│   │   └── (템플릿) [패스트캠퍼스] Upstage AI Lab 1기_그룹 스터디.pptx  
+│   └── paper  
+└── input  
+    └── data  
+        ├── eval  
+        └── train  
 
 ## 3. Data descrption
 
