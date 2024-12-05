@@ -49,50 +49,58 @@ Spotify 오디오 특성 데이터를 기반으로 사용자 맞춤형 음악을
     └── data  
         ├── eval  
         └── train  
-
+```
 ---
 
-## 3. Data descrption
+## 3. 데이터 설명
 
-### Dataset overview
+### 데이터 개요
 
-- _Explain using data_
+- 출처: Spotify API
+- 구성: 약 10,000곡 이상의 오디오 특성 데이터 (Danceability, Energy, Tempo 등).
 
 ### EDA
 
-- _Describe your EDA process and step-by-step conclusion_
+1. 결측값 탐지 및 제거.
+2. 오디오 특성 간 상관관계 분석.
+3. 장르별 오디오 특성 분포 시각화.
 
 ### Data Processing
 
-- _Describe data processing process (e.g. Data Labeling, Data Cleaning..)_
+- 중복 제거 및 결측값 처리.
+- 주요 특성을 기반으로 데이터 라벨링.
+- 오디오 특성 값 표준화/정규화
 
-## 4. Modeling
+## 4. 모델링
 
-### Model descrition
+### 선택모델
 
-- _Write model information and why your select this model_
+- KNN
+- 컨텐츠 기반 유사도
+- TF-IDF 코사인 유사도
 
-### Modeling Process
+### 모델링 프로세스 
 
-- _Write model train and test process with capture_
+1. 음악 선택/아티스트 선택/현재 유저의 플레이리스트 선택
+2. 추천 모델 학습 : 오디오 특성 기반 유사도 계산
+3. 결과 검증 : 추천 음악의 유사성평가
 
-## 5. Result
+## 5. 결과
 
-### Leader Board
+### 리더보드
 
-- _Insert Leader Board Capture_
-- _Write rank and score_
+- feature 유사도
+- f1 score 
+- Human Evaluation
 
-### Presentation
+### 발표자료
+: 링크
 
-- _Insert your presentaion file(pdf) link_
+## 기타
 
-## etc
+### 회의록
+: 링크
 
-### Meeting Log
-
-- _Insert your meeting log link like Notion or Google Docs_
-
-### Reference
-
-- _Insert related reference_
+### 참고자료
+- Spotify API 문서
+- 추천 시스템 관련 논문 및 튜토리얼
