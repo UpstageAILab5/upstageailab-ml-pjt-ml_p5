@@ -1,0 +1,5 @@
+mlflow==2.4.0
+flask==2.0.3
+jinja2==2.11.3  # Sphinx가 요구하는 버전
+MarkupSafe==1.1.1  # Sphinx가 요구하는 버전
+ruamel.yaml==0.17.21

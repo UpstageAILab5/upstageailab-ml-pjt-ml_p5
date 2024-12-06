@@ -17,4 +17,6 @@ RUN pip install --no-cache-dir \
     pandas \
     scikit-learn \
     requests \
-    numpy
+    numpy \
+    spotipy \
+    mlflow
