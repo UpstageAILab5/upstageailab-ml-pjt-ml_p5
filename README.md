@@ -37,18 +37,18 @@ Spotify 오디오 특성 데이터를 기반으로 사용자 맞춤형 음악을
 
 ## **프로젝트 디렉토리 구조**  
 ```plaintext
-├── code  
-│   ├── jupyter_notebooks  
+├── project  
+│   ├── mlflow  
 │   │   └── model_train.ipynb  
-│   └── train.py  
-├── docs  
-│   ├── pdf  
-│   │   └── (템플릿) [패스트캠퍼스] Upstage AI Lab 1기_그룹 스터디.pptx  
-│   └── paper  
+│   └── airflow
+│   │
+│   └── fastapi/streamlit
 └── input  
     └── data  
-        ├── eval  
-        └── train  
+        ├── df_ml_5.data 
+        └── user.data
+├── Dockerfile  
+└── docker-compose.yml
 ```
 ---
 
